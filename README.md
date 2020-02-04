@@ -1,2 +1,2 @@
 # PrivateBiometrics
-Private Biometrics artifacts
+Private Identity artifacts
