@@ -3,7 +3,7 @@ Private Identity artifacts
 
 # Deploy new cluster on AWS
 ## Install AWSCLI
-    pip install awscli
+    sudo pip install awscli
 ## Configure AWS
     aws configure 
 Note: Setup awscli on your system with credentials using ACCESS-KEY-ID and SECRET-ACCESS-KEY with default region us-east-2
