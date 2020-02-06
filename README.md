@@ -8,7 +8,7 @@ Private Identity artifacts
     aws configure 
 Note: Setup awscli on your system with credentials using ACCESS-KEY-ID and SECRET-ACCESS-KEY with default region us-east-2
 ## Install eksctl 
-    curl --silent --location "https://github.com/weaveworks/eksctl/releases/download/latest_release/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+    curl --location "https://github.com/weaveworks/eksctl/releases/download/latest_release/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
     sudo mv /tmp/eksctl /usr/local/bin
 ## Create Cluster using eksctl
     eksctl create cluster --name test --version 1.14 --region us-east-2 --nodegroup-name standard-workers-group --node-type m5.xlarge --nodes 2 --nodes-min 2 --nodes-max 3 --node-volume-size 200 --ssh-access --ssh-public-key my-public-key.pub --managed
