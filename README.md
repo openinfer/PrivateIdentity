@@ -34,7 +34,7 @@ Note: Setup awscli on your system with credentials using ACCESS-KEY-ID and SECRE
 
 Note: You need to change Route53 rules in aws for new nlb [network load balancer]
  
-#### 3. Go to location /home/scott/pb/kubernetes/code/pbapp/aws and /home/scott/pb/kubernetes/code/jobscheduler/aws
+#### 3. Go to location 
 
 		cd /home/scott/pb/kubernetes/code/pbapp/aws
 		./cluster_run.sh devel v1.2
