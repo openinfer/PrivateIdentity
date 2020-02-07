@@ -38,13 +38,13 @@ Note: You need to change Route53 rules in aws for new nlb [network load balancer
 
 	cd /home/scott/pb/kubernetes/code/pbapp/aws
 	./cluster_run.sh devel v1.2
-    cd /home/scott/pb/kubernetes/code/jobscheduler/aws
-    ./cluster_run.sh devel v1.2
+	cd /home/scott/pb/kubernetes/code/jobscheduler/aws
+	./cluster_run.sh devel v1.2
 
 ### Setps to put pbweb application Into Cluster
    
 ### Go to location
-    	cd /home/scott/pb-web/kubernetes/aws
-   	kubectl apply -f ingress-devel.yml
-    	./cluster_run.sh devel v1.2
+	cd /home/scott/pb-web/kubernetes/aws
+	kubectl apply -f ingress-devel.yml
+	./cluster_run.sh devel v1.2
 
