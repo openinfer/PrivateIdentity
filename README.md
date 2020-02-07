@@ -19,7 +19,7 @@ Note: Setup awscli on your system with credentials using ACCESS-KEY-ID and SECRE
 
   Note: Replace my-public-key.pub with your system public key that will help you to login into nodes and rest parameters you can choose as per your new requirements.
 
-## Setps to put apps Into Cluster
+## Steps to put apps Into Cluster
 
 #### 1. Import kubeconfig file from AWS
 		aws eks --region us-east-2 update-kubeconfig --name scott
@@ -41,7 +41,7 @@ Note: You need to change Route53 rules in aws for new nlb [network load balancer
 		cd /home/scott/pb/kubernetes/code/jobscheduler/aws
 		./cluster_run.sh devel v1.2
 
-### Setps to put pbweb application Into Cluster
+### Steps to put pbweb application Into Cluster
    
 #### Go to location
 		cd /home/scott/pb-web/kubernetes/aws
