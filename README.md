@@ -53,4 +53,6 @@ Note: You need to change Route53 rules in aws for new nlb [network load balancer
 		cd ${PBWEB_HOME}/kubernetes/aws
 		kubectl apply -f ingress-devel.yml
 		./cluster_run.sh ${BRANCH} ${VERSION}
+	
+
 
