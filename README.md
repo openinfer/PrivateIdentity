@@ -21,10 +21,10 @@ Note: Setup awscli on your system with credentials using ACCESS-KEY-ID and SECRE
 
 ## Setps to put apps Into Cluster
 
-### 1. Import kubeconfig file from AWS
+#### 1. Import kubeconfig file from AWS
 		aws eks --region us-east-2 update-kubeconfig --name scott
 		kubectl  config use-context arn:aws:eks:us-east-2:301103197657:cluster/scott
-### 2. Go to location
+#### 2. Go to location
 		cd /home/scott/pb/kubernetes/deployment
 		kubectl apply -f mandatory.yaml
 		kubectl apply -f deploy_nlb.yml
@@ -34,7 +34,7 @@ Note: Setup awscli on your system with credentials using ACCESS-KEY-ID and SECRE
 
 Note: You need to change Route53 rules in aws for new nlb [network load balancer]
  
-### 3. Go to location /home/scott/pb/kubernetes/code/pbapp/aws and /home/scott/pb/kubernetes/code/jobscheduler/aws
+#### 3. Go to location /home/scott/pb/kubernetes/code/pbapp/aws and /home/scott/pb/kubernetes/code/jobscheduler/aws
 
 		cd /home/scott/pb/kubernetes/code/pbapp/aws
 		./cluster_run.sh devel v1.2
