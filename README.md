@@ -1,6 +1,12 @@
 # Private Identity
 Private Identity artifacts
 
+## Environment Variables
+	export PB_HOME=/home/scott/pb/
+	export PBWEB_HOME=/home/scott/pb-web
+	export BRANCH="devel"
+	export VERSION="v1.2"
+
 # Deploy new cluster on AWS
 ## Install AWSCLI
     sudo pip3 install awscli
@@ -25,8 +31,7 @@ Note: Setup awscli on your system with credentials using ACCESS-KEY-ID and SECRE
 		aws eks --region us-east-2 update-kubeconfig --name scott
 		kubectl  config use-context arn:aws:eks:us-east-2:301103197657:cluster/scott
 #### 2. Go to location
-		export pb_Home=/home/scott/pb/
-		cd ${pb_Home}/kubernetes/deployment
+		cd ${PB_HOME}/kubernetes/deployment
 		kubectl apply -f mandatory.yaml
 		kubectl apply -f deploy_nlb.yml
         	kubectl apply -f ingress-aws.yml
@@ -36,17 +41,15 @@ Note: Setup awscli on your system with credentials using ACCESS-KEY-ID and SECRE
 Note: You need to change Route53 rules in aws for new nlb [network load balancer]
  
 #### 3. Go to location 
-		export pb_Home=/home/scott/pb
-		cd ${pb_Home}/kubernetes/code/pbapp/aws
-		./cluster-run.sh devel v1.2
-		cd ${pb_Home}/kubernetes/code/jobscheduler/aws
-		./cluster-run.sh devel v1.2
+		cd ${PB_HOME}/kubernetes/code/pbapp/aws
+		./cluster-run.sh BRNACH VERSION
+		cd ${PB_HOME}/kubernetes/code/jobscheduler/aws
+		./cluster-run.sh BRANCH VERSION
 
 ### Steps to put pbweb application Into Cluster
    
 #### Go to location
-		pbweb_Home=/home/scott/pb-web
-		cd ${pbweb_Home}/kubernetes/aws
+		cd ${PBWEB_HOME}/kubernetes/aws
 		kubectl apply -f ingress-devel.yml
 		./cluster_run.sh devel v1.2
 
