@@ -28,9 +28,9 @@ Note: Setup awscli on your system with credentials using ACCESS-KEY-ID and SECRE
 		cd /home/scott/pb/kubernetes/deployment
 		kubectl apply -f mandatory.yaml
 		kubectl apply -f deploy_nlb.yml
-        kubeclt apply -f ingress-aws.yml
+        	kubeclt apply -f ingress-aws.yml
 		kubectl create secret tls privateidentity.org --key ./certs/privateidentity.org/privateidentity.org.key --cert ./certs/privateidentity.org/privateidentity.org.crt
-        kubectl get ing
+        	kubectl get ing
 
 Note: You need to change Route53 rules in aws for new nlb [network load balancer]
  
@@ -38,13 +38,13 @@ Note: You need to change Route53 rules in aws for new nlb [network load balancer
 
 	cd /home/scott/pb/kubernetes/code/pbapp/aws
 	./cluster_run.sh devel v1.2
-    cd /home/scott/pb/kubernetes/code/jobscheduler/aws
-    ./cluster_run.sh devel v1.2
+    	cd /home/scott/pb/kubernetes/code/jobscheduler/aws
+    	./cluster_run.sh devel v1.2
 
 ### Setps to put pbweb application Into Cluster
    
 ### Go to location
-    cd /home/scott/pb-web/kubernetes/aws
-    kubectl apply -f ingress-devel.yml
-    ./cluster_run.sh devel v1.2
+    	cd /home/scott/pb-web/kubernetes/aws
+   	kubectl apply -f ingress-devel.yml
+    	./cluster_run.sh devel v1.2
 
