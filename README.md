@@ -25,7 +25,8 @@ Note: Setup awscli on your system with credentials using ACCESS-KEY-ID and SECRE
 		aws eks --region us-east-2 update-kubeconfig --name scott
 		kubectl  config use-context arn:aws:eks:us-east-2:301103197657:cluster/scott
 #### 2. Go to location
-		cd /home/scott/pb/kubernetes/deployment
+		export pb_Home=/home/scott/pb/
+		cd ${pb_Home}/kubernetes/deployment
 		kubectl apply -f mandatory.yaml
 		kubectl apply -f deploy_nlb.yml
         	kubectl apply -f ingress-aws.yml
@@ -35,16 +36,17 @@ Note: Setup awscli on your system with credentials using ACCESS-KEY-ID and SECRE
 Note: You need to change Route53 rules in aws for new nlb [network load balancer]
  
 #### 3. Go to location 
-
-		cd /home/scott/pb/kubernetes/code/pbapp/aws
-		./cluster_run.sh devel v1.2
-		cd /home/scott/pb/kubernetes/code/jobscheduler/aws
-		./cluster_run.sh devel v1.2
+		export pb_Home=/home/scott/pb
+		cd ${pb_Home}/kubernetes/code/pbapp/aws
+		./cluster-run.sh devel v1.2
+		cd ${pb_Home}/kubernetes/code/jobscheduler/aws
+		./cluster-run.sh devel v1.2
 
 ### Steps to put pbweb application Into Cluster
    
 #### Go to location
-		cd /home/scott/pb-web/kubernetes/aws
+		pbweb_Home=/home/scott/pb-web
+		cd ${pbweb_Home}/kubernetes/aws
 		kubectl apply -f ingress-devel.yml
 		./cluster_run.sh devel v1.2
 
