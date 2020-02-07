@@ -3,7 +3,7 @@ Private Identity artifacts
 
 # Deploy new cluster on AWS
 ## Install AWSCLI
-    sudo pip install awscli
+    sudo pip3 install awscli
 ## Configure AWS
     aws configure 
     AWS Access Key ID [None]: XXXXXXXXXXXXX
