@@ -25,11 +25,11 @@ Note: Setup awscli on your system with credentials using ACCESS-KEY-ID and SECRE
 		aws eks --region us-east-2 update-kubeconfig --name scott
 		kubectl  config use-context arn:aws:eks:us-east-2:301103197657:cluster/scott
 #### 2. Go to location
-			cd /home/scott/pb/kubernetes/deployment
+		cd /home/scott/pb/kubernetes/deployment
 		kubectl apply -f mandatory.yaml
 		kubectl apply -f deploy_nlb.yml
         	kubectl apply -f ingress-aws.yml
-		kubectl create secret tls privateidentity.org --key ./certs/privateidentity.org/privateidentity.org.key --cert ./certs/privateidentity.org/privateidentity.org.crt
+		kubectl create secret tls privateidentity.org --key .certs/privateidentity.org/privateprivateidentity.org.key --cert ./certs/privateidentity.org/privateidentity.org.crt
         	kubectl get ing
 
 Note: You need to change Route53 rules in aws for new nlb [network load balancer]
