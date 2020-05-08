@@ -3,7 +3,7 @@ name: Bug report
 about: Create a report to help us improve our software
 title: "[BUG]"
 labels: bug
-assignees: loainagati, sriesow, chungnguyenfit
+assignees: chungnguyenfit, loainagati, sriesow
 
 ---
 
