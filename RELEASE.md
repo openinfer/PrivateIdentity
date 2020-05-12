@@ -1,5 +1,10 @@
 # Release 1.0.0.8.212 #
 
+
+## Release date ##
+
+May 7 2020
+
 ## Major Features and Improvements ##
 
 1. The release introduces two new URLs. 
@@ -24,6 +29,10 @@ The release split the main application into two, one that demonstrates the appli
 
 # Release 1.0.0.7.94 #
 
+## Release date ##
+
+December 9 2019
+
 ## Major Features and Improvements ##
 
 1. GlassCheck requires users to remove eyeglasses & sunglasses.
@@ -46,6 +55,10 @@ Using a browser and a Webcam or phone, we display a square video window on the b
 
 
 # Release 1.0.0.6.04 #
+
+## Release date ##
+
+June 26 2019
 
 ## Major Features and Improvements ##
 
@@ -86,6 +99,10 @@ We are adding functionality to capture government identification documents, capt
 
 # Release 1.0001 #
 Initial Release of PrivateIdentity
+
+## Release date ##
+
+June 18 2019
 
 ## Major Features and Improvements ##
 
