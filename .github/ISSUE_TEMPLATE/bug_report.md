@@ -3,7 +3,7 @@ name: Bug report
 about: Report to help us improve our software
 title: "[BUG]"
 labels: bug
-assignees: chungnguyenfit, loainagati, sriesow
+assignees: holiday-kody
 
 ---
 
