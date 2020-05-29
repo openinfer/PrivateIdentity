@@ -1,3 +1,31 @@
+# Release 1.0.0.8.244 #
+
+
+## Release Date ##
+
+May 29 2020
+
+## Major Features and Improvements ##
+
+### 1. Improved User Interface
+  * Increased speed of image acquisition by 300%. Updated Model View Controller to React.js.  This resulted in a performance increase of 300 percent on image acquisition.
+  * Improved stability of Verified ID in Demo application.  We reduced the possibility of user error by limiting the choices available for Verified ID.  Now, when the Verified ID button is active, the user is only allowed to choose “Enroll.”  
+
+### 2. Improved Face and Voice Accuracy
+  * Improved face recognition model’s accuracy and boundary cases.  For images using modern cameras (phone, Webcam, etc.) and images on legacy cameras (> 0.25MP) we now have an overlap of 0 percent. The last model was 3.6% overlap. This translates to 0% false positive or negatives on all testing.  On legacy images (blurry photos, and images pre-1990), the overlap is 1%.  These legacy image probes did not generate false positives but yield 1 percent false negatives.  
+  * The face model is also now trained to accommodate two additional boundary cases: (1) faces in motion and (2) up to 30% occlusions without loss of accuracy.  This model can handle face mask occlusions that cover less than 30% of the face. The next iteration on July 1 will handle full face masks.
+  * Improved Voice Identification Performance.  We integrated a more accurate voice model. This model has an overlap of 8%, which results in 8 percent false negatives, across the test sets with no false positives.  The last model was reported 11% overlap.
+  * Fully separated the Demo and the production applications.  The demo url http://www.private.id/demo offers a simple interface to test basic functionality without the need to understand the design details. The new url http://www.private.id/a  hosts the production application running entirely on url parameters. This is sufficient for all production applications.  All URL parameters are posted here: https://github.com/openinfer/PrivateIdentity/wiki/Client-URL-Parameters. 
+
+### 3. Third-Party Integrations
+  * PING Identity Integration.  We have fully integrated Private Identity into PING Identity.  PING Identity no longer needs to use username/password.  The PING integration includes enrollment, verified enrollment using Photo ID, 1:many login with face, voice, face+voice, account recovery, “forget me,” and forget user.
+  * Okta Integration.  We have fully integrated Private Identity as an “Okta IdP Factor Authentication” on the Okta platform.  This allows customers to use Private Identity face, voice, or face+voice as an MFA. 
+
+
+
+
+
+
 # Release 1.0.0.8.212 #
 
 
