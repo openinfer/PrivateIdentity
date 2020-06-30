@@ -9,7 +9,7 @@ The Face Validation DNN provides real-time passive facial liveness to prevent ph
 
 To enable the anti-spoofing in the application, use the URL parameter  antiVideoSpoof=true when launching the application. This enables the application to check whether the stream of images captured from the webcam is recorded or live. 
 
-The next release will include video and photo anti-spoofing functionality by default. 
+The next release will include video and photo anti-spoofing functionality by default without the need for a URL parameter. 
 
 ## New Enrollment Workflow
 The enrollment workflow now includes an introduction, request for user consent and informs users as to the progress of the enrollment (biometrics encrypted, biometrics deleted, enrollment complete, and account creation is finished).  (With many thanks and credit to BNG!) 
