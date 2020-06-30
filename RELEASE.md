@@ -1,3 +1,46 @@
+# Release 1.0.0.8.244
+**6-30-2020**
+
+## Major Features and Improvements
+
+### Video and Photo Detection (Anti-spoofing) 
+**Face Validation DNN** 
+The Face Validation DNN provides real-time passive facial liveness to prevent photo and video presentation attacks (photo and video spoofing). This algorithm mitigates risk of a video or photo spoofing attack during unattended operation. The DNN receives video input and outputs a validation score between 0 and 1, where 0 is a human face and 1 is a video or image presentation attack. The requested action cannot proceed until the detection of a live face.
+
+To enable the anti-spoofing in the application, use the URL parameter  antiVideoSpoof=true when launching the application. This enables the application to check whether the stream of images captured from the webcam is recorded or live. 
+
+The next release will include video and photo anti-spoofing functionality by default. 
+
+## New Enrollment Workflow
+The enrollment workflow now includes an introduction, request for user consent and informs users as to the progress of the enrollment (biometrics encrypted, biometrics deleted, enrollment complete, and account creation is finished).  (With many thanks and credit to BNG!) 
+
+## Minor Features Implemented 
+* Added documentation for Customer Integrations 
+
+* Enhanced JavaScript Encryption Engine API 
+
+* Added Silhouette Image to gray screen & blurry screen enhancement 
+
+* Added Metadata and Cert download to Wiki documentation for Okta
+
+* Enhanced Log management server 
+
+* Enhanced security of API key feature 
+
+## Bug Fixes
+* Fixed Spoof Icon during video spoof detection 
+
+* Edited documentation to correct setup link
+
+* Repaired enroll function for Okta and PING (SAML) 
+
+* Repaired voice authentication for Okta
+
+* Repaired Photo ID enrollment 
+
+* Fixed IPad Pro is opening rear-facing camera bug
+
+
 # Release 1.0.0.8.244 #
 
 
