@@ -10,6 +10,9 @@
 The [Face w/ Mask DNN](https://github.com/openinfer/PrivateIdentity/wiki#face--mask-recognition) is now the default model for facial recognition. Enroll using a face or face w/ mask. Then predict with a face or face w/ mask. We recommend enrolling without a mask (to provide more data to the model) and then predicting with or without a mask. 
 The Face DNN (that does not work with mask) can be accessed using the URL parameter face=true&faceMask=false. 
 
+## FACE MODALITY
+A new release of [Face DNN](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition) reduces the size to 1.3MB without a loss in accuracy.  
+
 ## Video and Photo Detection (Anti-spoofing) 
 This release turns on [video and photo anti-spoofing](v) functionality by default. 
 Use the URL parameter antiVideospoof=false to turn off anti-spoofing.
