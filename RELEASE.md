@@ -1,3 +1,19 @@
+# Release 1.0.0.8.414
+**8-31-2020**
+
+# Major Features and Improvements
+
+## FINGERPRINT MODALITY IS NOW OPERATIONAL
+[Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification) works with touchless fingerprints (optical scan using a phone or Webcam) as well as fingerprints from a touch scanner (capacitive scan).  
+
+## FACE w/ MASK MODALITY
+The [Face w/ Mask DNN](https://github.com/openinfer/PrivateIdentity/wiki#face--mask-recognition) is now the default model for facial recognition. Enroll using a face or face w/ mask. Then predict with a face or face w/ mask. We recommend enrolling without a mask (to provide more data to the model) and then predicting with or without a mask. 
+The Face DNN (that does not work with mask) can be accessed using the URL parameter face=true&faceMask=false. 
+
+## Video and Photo Detection (Anti-spoofing) 
+This release turns on [video and photo anti-spoofing](v) functionality by default. 
+Use the URL parameter antiVideospoof=false to turn off anti-spoofing.
+
 # Release 1.0.0.8.244
 **6-30-2020**
 
