@@ -3,14 +3,14 @@
 
 # Major Features and Improvements
 
-## FINGERPRINT MODALITY IS NOW OPERATIONAL
+## Fingerprint Modality is Now Operational
 [Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification) works with touchless fingerprints (optical scan using a phone or Webcam) as well as fingerprints from a touch scanner (capacitive scan).  
 
-## FACE w/ MASK MODALITY
+## Face w/ Mask Modality
 The [Face w/ Mask DNN](https://github.com/openinfer/PrivateIdentity/wiki#face--mask-recognition) is now the default model for facial recognition. Enroll using a face or face w/ mask. Then predict with a face or face w/ mask. We recommend enrolling without a mask (to provide more data to the model) and then predicting with or without a mask. 
 The Face DNN (that does not work with mask) can be accessed using the URL parameter _face=true&faceMask=false._ 
 
-## FACE MODALITY
+## Face Modality
 A new release of [Face DNN](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition) reduces the size to 1.3MB without a loss in accuracy.  
 
 ## Video and Photo Detection (Anti-spoofing) 
