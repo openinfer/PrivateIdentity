@@ -1,5 +1,4 @@
 # Release 1.0.0.8.414
-**8-31-2020**
 
 # Major Features and Improvements
 
@@ -18,7 +17,6 @@ This release turns on [video and photo anti-spoofing](v) functionality by defaul
 Use the URL parameter _antiVideospoof=false_ to turn off anti-spoofing.
 
 # Release 1.0.0.8.244
-**6-30-2020**
 
 ## Major Features and Improvements
 
@@ -63,10 +61,6 @@ The enrollment workflow now includes an introduction, request for user consent a
 # Release 1.0.0.8.244 #
 
 
-## Release Date ##
-
-May 29 2020
-
 ## Major Features and Improvements ##
 
 ### 1. Improved User Interface
@@ -89,11 +83,6 @@ May 29 2020
 
 
 # Release 1.0.0.8.212 #
-
-
-## Release Date ##
-
-May 7 2020
 
 ## Major Features and Improvements ##
 
@@ -119,10 +108,6 @@ The release split the main application into two, one that demonstrates the appli
 
 # Release 1.0.0.7.94 #
 
-## Release Date ##
-
-December 9 2019
-
 ## Major Features and Improvements ##
 
 1. GlassCheck requires users to remove eyeglasses & sunglasses.
@@ -145,10 +130,6 @@ Using a browser and a Webcam or phone, we display a square video window on the b
 
 
 # Release 1.0.0.6.04 #
-
-## Release Date ##
-
-June 26 2019
 
 ## Major Features and Improvements ##
 
@@ -190,9 +171,6 @@ We are adding functionality to capture government identification documents, capt
 # Release 1.0001 #
 Initial Release of PrivateIdentity
 
-## Release Date ##
-
-June 18 2019
 
 ## Major Features and Improvements ##
 
